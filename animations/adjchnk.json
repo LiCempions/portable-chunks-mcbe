@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.adjchnk": {
+			"loop": true,
+			"bones": {
+				"chunk": {
+					"rotation":	[ 0, "-q.body_y_rotation", 0 ],
+					"position": [ "-(v.chunk_delta_x*math.cos(q.body_y_rotation) + (v.chunk_delta_z + 0)*math.sin(q.body_y_rotation))", "v.chunk_delta_y - 517", "v.chunk_delta_x*math.sin(-q.body_y_rotation) + (v.chunk_delta_z + 0)*math.cos(q.body_y_rotation)" ]
+				}
+			}
+		}
+	}
+}
