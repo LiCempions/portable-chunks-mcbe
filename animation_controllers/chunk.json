@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers":{
+        "controller.animation.player.adjchnk":{
+			"initial_state": "off",
+			"states": {
+				"off": {
+					"transitions": [
+						{
+							"on": "!q.is_in_ui"
+						}
+					]
+				},
+				"on": {
+					"animations": [
+						"adjchnk"
+					],
+					"transitions":[
+						{
+							"off": "q.is_in_ui"
+						}
+					]
+				}
+			}
+		}
+
+    }
+}
