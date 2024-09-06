@@ -106,7 +106,7 @@
                 "shield_block_off_hand": "animation.player.shield_block_off_hand",
                 "blink": "controller.animation.persona.blink",
                 "tooting_goat_horn": "animation.humanoid.tooting_goat_horn",
-                "adjchnk": "animation.player.adjchnk"
+                "adjchnk": "controller.animation.player.adjchnk"
             },
             "render_controllers": [
                 {
