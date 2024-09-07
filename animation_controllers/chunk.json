@@ -7,7 +7,7 @@
 				"off": {
 					"transitions": [
 						{
-							"on": "!q.is_in_ui"
+							"on": "!q.is_in_ui && !q.is_first_person"
 						}
 					]
 				},
@@ -17,7 +17,7 @@
 					],
 					"transitions":[
 						{
-							"off": "q.is_in_ui"
+							"off": "q.is_in_ui || q.is_first_person"
 						}
 					]
 				}

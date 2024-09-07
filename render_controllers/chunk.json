@@ -2,12 +2,15 @@
 	"format_version": "1.8.0",
 	"render_controllers": {
 		"controller.render.player.chunk": {
-			"geometry": "Geometry.chunk",
-			"materials": [
-				{
-					"*": "Material.beam"
+			"arrays": {
+				"materials": {
+					"Array.materials": ["Material.invisible", "Material.beam"]
 				}
-			],
+			},
+			"geometry": "Geometry.chunk",
+			"materials": [{
+				"*" : "Array.materials[q.is_item_name_any('slot.weapon.offhand', 0, 'minecraft:firework_rocket') && !q.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:crossbow', 'minecraft:bow') && !q.is_first_person && !q.is_in_ui]"
+			}],
 			"textures": [
 				"Texture.chunk"
 			]
