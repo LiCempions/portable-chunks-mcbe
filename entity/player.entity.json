@@ -43,7 +43,7 @@
                     "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
                     "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
                     "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
-                    "variable.render_chunk = q.is_item_name_any('slot.weapon.offhand', 0, 'minecraft:firework_rocket') && !q.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:crossbow', 'minecraft:bow') && !q.is_in_ui && !v.is_first_person;",
+                    "variable.render_chunk = q.is_item_name_any('slot.weapon.offhand', 0, 'minecraft:firework_rocket') && !q.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:crossbow', 'minecraft:bow') && !q.is_in_ui && !q.is_first_person;",
                     "(!q.is_in_ui) ? {variable.chunk_delta_x = math.mod(q.position(0), 16)*16;};",
                     "(!q.is_in_ui) ? {variable.chunk_delta_y = -math.mod(q.position(1), 16)*16;};",
                     "(!q.is_in_ui) ? {variable.chunk_delta_z = math.mod(q.position(2), 16)*16;};"
