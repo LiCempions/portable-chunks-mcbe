@@ -131,7 +131,7 @@
                     "controller.render.player.map": "variable.map_face_icon"
                 },
                 {
-                    "controller.render.player.chunk": "!q.is_in_ui && !q.is_first_person"
+                    "controller.render.player.chunk": "!q.is_in_ui && !v.is_first_person"
                 }
             ],
             "enable_attachables": true

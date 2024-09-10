@@ -13,7 +13,7 @@
 			],
 			"part_visibility": [
 				{ "*": false },
-				{ "*": "q.is_item_name_any('slot.weapon.offhand', 0, 'minecraft:firework_rocket') && !q.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:crossbow', 'minecraft:bow') && !q.is_in_ui && !q.is_first_person" }
+				{ "*": "q.is_item_name_any('slot.weapon.offhand', 0, 'minecraft:firework_rocket') && !q.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:crossbow', 'minecraft:bow') && !q.is_in_ui && !v.is_first_person" }
 			]
 		}
 	}
