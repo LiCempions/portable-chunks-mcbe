@@ -12,6 +12,17 @@
 					]
 				},
 				"on": {
+					"variables": {
+						"chunk_delta_x": {
+							"input": "math.mod(q.position(0), 16)*16"
+						},
+						"chunk_delta_y": {
+							"input": "-math.mod(q.position(1), 16)*16"
+						},
+						"chunk_delta_z": {
+							"input": "math.mod(q.position(2), 16)*16"
+						}
+					},
 					"animations": [
 						"adjchnk"
 					],
